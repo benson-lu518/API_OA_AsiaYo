@@ -44,25 +44,7 @@ This project implements a RESTful API using FastAPI to handle orders and Pyspark
    - If any validation fails, an `Error Code=400` is returned.
 
 ## Project Structure
-.
-├── app/
-│   ├── api/
-│   │   ├── __init__.py
-│   │   ├── orders.py          # API endpoint implementation
-│   ├── services/
-│   │   ├── __init__.py
-│   │   ├── order_factory.py   # Order creation logic
-│   │   ├── order_parser.py    # Order parsing logic
-│   ├── models/
-│   │   ├── __init__.py
-│   │   ├── order.py           # Order model (Form Checking)
-│   ├── tests/
-│   │   ├── __init__.py
-│   │   ├── test_orders.py     # Unit tests for /api/orders
-│   ├── main.py                # Application entry point
-│   ├── Dockerfile
-│   ├── requirements.txt
-└── README.md
+. ├── app/ │ ├── api/ │ │ ├── init.py │ │ ├── orders.py # API endpoint implementation │ ├── services/ │ │ ├── init.py │ │ ├── order_factory.py # Order creation logic │ │ ├── order_parser.py # Order parsing logic │ ├── models/ │ │ ├── init.py │ │ ├── order.py # Order model (Form Checking) │ ├── tests/ │ │ ├── init.py │ │ ├── test_orders.py # Unit tests for /api/orders │ ├── main.py # Application entry point │ ├── Dockerfile │ ├── requirements.txt └── README.md
 
 
 ## Installation
