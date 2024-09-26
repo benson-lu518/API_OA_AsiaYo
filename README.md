@@ -90,5 +90,5 @@ To set up the project locally, follow these steps:
   Since this program is simple it can be scaled up for future different orders as base type or sub type.  
 
 - **Strategy Pattern**:  
-  Implemented in the validation process, allowing different strategies for validating order fields (e.g., `validate_name`, `validate_price`, `validate_currency`).
+  Implemented in the validation process, allowing different strategies (validators) for validating order fields (e.g., `validate_name`, `validate_price`, `validate_currency`).
   Since the input data is simple it can be scaled up for future different input data that needs to implement different particular validators if it's needed.
