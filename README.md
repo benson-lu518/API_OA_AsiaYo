@@ -58,4 +58,36 @@ To set up the project locally, follow these steps:
 
 3. Run Docker container
    ```bash
-   docker run -p 8000:8000 asiayo-fastapi  
+   docker run -p 8000:8000 asiayo-fastapi
+   
+## SOLID Principles and Design Patterns
+
+### SOLID Principles
+
+- **Single Responsibility Principle**:  
+  Each class (order_factor, order_factor) is responsible for a single part of the functionality (order).
+
+- **Open/Closed Principle**:  
+  New features can be added without modifying the existing code (Ex: new parser, new validator, etc.).
+
+- **Liskov Substitution Principle**:  
+  All base types can be replaced by subtypes without affecting the rest of the system.
+  Since this program is simple and no inherited methods are implemented it opens to future parsers or validators.
+
+- **Interface Segregation Principle**:  
+  Interfaces are kept lean and focused, ensuring classes are not forced to implement unnecessary methods.
+  Since this program is simple and no interface methods are implemented it opens to future parsers or validators.
+
+- **Dependency Inversion Principle**:  
+  High-level modules should not depend upon low-level ones; use abstraction
+  Since this program is simple and no inherited methods are implemented it opens to future parsers or validators..
+
+
+### Design Patterns
+
+- **Factory Pattern**:  
+  Used to create orders in a clean and modular way through the `OrderFactory` class.
+
+- **Strategy Pattern**:  
+  Implemented in the validation process, allowing different strategies for validating order fields (e.g., `PriceValidator`, `CurrencyValidator`).
+
