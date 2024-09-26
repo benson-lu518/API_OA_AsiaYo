@@ -2,9 +2,6 @@
 from fastapi import APIRouter, HTTPException
 from services import order_factory, order_parser
 
-
-
-
 router = APIRouter()
 
 @router.post("/api/orders")
