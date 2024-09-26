@@ -11,7 +11,8 @@ This project implements a RESTful API using FastAPI to handle orders.
 - **Docker Support**: Dockerized application for easy deployment and scaling.
 
 ## Workflow
-(workflow.png)
+![Flow Diagram](workflow.png)
+
 
 ## Installation
 
