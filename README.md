@@ -3,6 +3,17 @@
 ## Description
 This project implements a RESTful API using FastAPI to handle orders and Pyspark to process data. 
 
+# Table of Contents
+
+- [Features](#features)
+- [Data Type](#data-type)
+  - [Input Fields](#input-fields)
+  - [Address Object Fields](#address-object-fields)
+- [Workflow](#workflow)
+- [Installation](#installation)
+- [SOLID Principles and Design Patterns](#solid-principles-and-design-patterns)
+  - [SOLID Principles](#solid-principles)
+  - [Design Patterns](#design-patterns)
 
 ## Features
 
