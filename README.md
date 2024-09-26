@@ -1,7 +1,7 @@
 # AsiaYo API OA
 
 ## Description
-This project implements a RESTful API using FastAPI to handle orders. 
+This project implements a RESTful API using FastAPI to handle orders and Pyspark to process data. 
 
 
 ## Features
@@ -13,6 +13,14 @@ This project implements a RESTful API using FastAPI to handle orders.
 ## Workflow
 ![Flow Diagram](workflow.png)
 
+1. A request is sent to the `POST /api/orders` endpoint.
+2. The request is handled by the `order_factory`, which checks if the form is valid:
+   - If valid, it proceeds to create the order.
+   - If invalid, it returns an `Error Code=412`.
+3. The `order parser` validates the order:
+   - Validates the name, price, and currency.
+   - Transforms the currency if needed.
+   - If any validation fails, an `Error Code=400` is returned.
 
 ## Installation
 
