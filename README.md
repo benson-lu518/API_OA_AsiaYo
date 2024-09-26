@@ -72,22 +72,23 @@ To set up the project locally, follow these steps:
 
 - **Liskov Substitution Principle**:  
   All base types can be replaced by subtypes without affecting the rest of the system.
-  Since this program is simple and no inherited methods are implemented it opens to future parsers or validators.
+  Since this program is simple and no inherited methods are implemented it opens to scale up for future parsers or validators.
 
 - **Interface Segregation Principle**:  
   Interfaces are kept lean and focused, ensuring classes are not forced to implement unnecessary methods.
-  Since this program is simple and no interface methods are implemented it opens to future parsers or validators.
+  Since this program is simple and no interface methods are implemented it opens to scale up for future parsers or validators.
 
 - **Dependency Inversion Principle**:  
   High-level modules should not depend upon low-level ones; use abstraction
-  Since this program is simple and no inherited methods are implemented it opens to future parsers or validators..
+  Since this program is simple and no inherited methods are implemented it opens to scale up for future parsers or validators.
 
 
 ### Design Patterns
 
 - **Factory Pattern**:  
-  Used to create orders in a clean and modular way through the `OrderFactory` class.
+  Used to create an order instance through the `OrderFactory` class.
+  Since this program is simple it can be scaled up for future different orders as base type or sub type.  
 
 - **Strategy Pattern**:  
-  Implemented in the validation process, allowing different strategies for validating order fields (e.g., `PriceValidator`, `CurrencyValidator`).
-
+  Implemented in the validation process, allowing different strategies for validating order fields (e.g., `validate_name`, `validate_price`, `validate_currency`).
+  Since the input data is simple it can be scaled up for future different input data that needs to implement different particular validators if it's needed.
