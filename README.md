@@ -14,10 +14,29 @@ This project implements a RESTful API using FastAPI to handle orders and Pyspark
 ![Flow Diagram](workflow.png)
 
 1. A request is sent to the `POST /api/orders` endpoint.
-2. The request is handled by the `order_factory`, which checks if the form is valid:
+   Sample Input:
+  ### Input Fields
+
+| Field     | Type   | Example                |
+|-----------|--------|------------------------|
+| id        | String | "A0000001"             |
+| name      | String | "Melody Holiday Inn"   |
+| address   | Object | { "city": "taipei-city", "district": "da-an-district", "street": "fuxing-south-road" } |
+| price     | String | "2050"                 |
+| currency  | String | "TWD"                  |
+
+### Address Object Fields
+
+| Field     | Type   | Example                |
+|-----------|--------|------------------------|
+| city      | String | "taipei-city"          |
+| district  | String | "da-an-district"       |
+| street    | String | "fuxing-south-road"    |
+
+3. The request is handled by the `order_factory`, which checks if the form is valid:
    - If valid, it proceeds to create the order.
    - If invalid, it returns an `Error Code=412`.
-3. The `order parser` validates the order:
+4. The `order parser` validates the order:
    - Validates the name, price, and currency.
    - Transforms the currency if needed.
    - If any validation fails, an `Error Code=400` is returned.
