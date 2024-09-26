@@ -10,11 +10,8 @@ This project implements a RESTful API using FastAPI to handle orders and Pyspark
 - **Data Processing**: Integrates PySpark for efficient data processing and analytics.
 - **Docker Support**: Dockerized application for easy deployment and scaling.
 
-## Workflow
-![Flow Diagram](workflow.png)
+## Data Type
 
-1. A request is sent to the `POST /api/orders` endpoint.
-   Sample Input:
   ### Input Fields
 
 | Field     | Type   | Example                |
@@ -33,10 +30,15 @@ This project implements a RESTful API using FastAPI to handle orders and Pyspark
 | district  | String | "da-an-district"       |
 | street    | String | "fuxing-south-road"    |
 
-3. The request is handled by the `order_factory`, which checks if the form is valid:
+## Workflow
+![Flow Diagram](workflow.png)
+
+1. A request is sent to the `POST /api/orders` endpoint.
+
+2. The request is handled by the `order_factory`, which checks if the form is valid:
    - If valid, it proceeds to create the order.
    - If invalid, it returns an `Error Code=412`.
-4. The `order parser` validates the order:
+3. The `order parser` validates the order:
    - Validates the name, price, and currency.
    - Transforms the currency if needed.
    - If any validation fails, an `Error Code=400` is returned.
