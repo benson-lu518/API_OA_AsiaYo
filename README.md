@@ -99,8 +99,9 @@ To set up the project locally, follow these steps:
 
 - **Factory Pattern**:  
   Used to create an order instance through the `OrderFactory` class.
-  Since this program is simple it can be scaled up for future different orders as base type or sub type.  
+  Since this program is simple it can be scaled up to create a base order class for future different orders as a subclass.  
 
 - **Strategy Pattern**:  
   Implemented in the validation process, allowing different strategies (validators) for validating order fields (e.g., `validate_name`, `validate_price`, `validate_currency`).
-  Since the input data is simple it can be scaled up for future different input data that needs to implement different particular validators if it's needed.
+  Since the input data is simple it can be scaled up to create a base validator class for future different validators as a subclass and it can be optionally selected when an order instance is created 
+  input data that needs to implement different particular validators if it's needed.
