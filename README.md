@@ -106,5 +106,5 @@ To set up the project locally, follow these steps:
   Since the input data is simple it can be scaled up to create a base validator class for future different validators as a subclass and it can be optionally selected when an order instance is created if it's needed.
 
 - **Decorator**:
-  In this program, `currency transformation` is implemented in the `validate_currency `. This behavioral responsibility is not very clear and it can be scaled up to create a `user-defined function` by Pyspark as a transformer to transform the currency. 
+  In this program, `currency transformation` is implemented in the `validate_currency `. This behavioral responsibility is not very clear and it can be scaled up to create a `user-defined function (UDF) ` by Pyspark as a transformer to transform the currency. 
 
