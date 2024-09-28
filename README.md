@@ -103,5 +103,8 @@ To set up the project locally, follow these steps:
 
 - **Strategy Pattern**:  
   Implemented in the validation process, allowing different strategies (validators) for validating order fields (e.g., `validate_name`, `validate_price`, `validate_currency`).
-  Since the input data is simple it can be scaled up to create a base validator class for future different validators as a subclass and it can be optionally selected when an order instance is created 
-  input data that needs to implement different particular validators if it's needed.
+  Since the input data is simple it can be scaled up to create a base validator class for future different validators as a subclass and it can be optionally selected when an order instance is created if it's needed.
+
+- **Decorator**:
+  In this program, `currency transformation` is implemented in the `validate_currency `. This behavioral responsibility is not very clear and it can be scaled up to create a `user-defined function` by Pyspark as a transformer to transform the currency. 
+
