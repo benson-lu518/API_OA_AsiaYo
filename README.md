@@ -17,7 +17,7 @@ This project implements a RESTful API using FastAPI to handle orders and Pyspark
 
 ## Features
 
-- **FastAPI**: Built with FastAPI to ensure high performance and easy development.
+- **FastAPI**: Built with FastAPI to receive request and response.
 - **Data Processing**: Integrates PySpark for efficient data processing and analytics.
 - **Docker Support**: Dockerized application for easy deployment and scaling.
 
